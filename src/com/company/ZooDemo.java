@@ -21,5 +21,10 @@ public class ZooDemo {
         animalPen.addBabyAnimalToPen(giraffe);
 
         animalPen.displayPenDetails();
+
+        animalPen.removeAnimal(monkey);
+        animalPen.removeBabyAnimal(bear);
+
+        animalPen.displayPenDetails();
     }
 }
