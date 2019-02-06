@@ -25,11 +25,13 @@ public class Pen {
     }
 
     public String displayPenDetails(){
+        System.out.println("Here are the animals currently in the Pen:\n");
         for(Animal animal : animals){
-            System.out.println("Here are the amimals currently in the Pen: " + animal.printDetails());
+            System.out.println(animal.printDetails());
         }
+        System.out.println("Here are the babyAnimals currently in the Pen:\n");
         for(BabyAnimal babyAnimal : babyAnimals){
-            System.out.println("Here are the babyAnimals currently in the Pen:\n" + babyAnimal.printDetails());
+            System.out.println(babyAnimal.printDetails() + "\n");
         }
         return "";
     }

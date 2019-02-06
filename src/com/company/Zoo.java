@@ -5,8 +5,12 @@ public class Zoo {
 
     private ArrayList<Pen> animalPens = new ArrayList<>();
 
-    public void removePen(Pen animalPen){
-        animalPens.remove(animalPen);
+   // public void addPen(Pen pen){
+        //animalPens.add(pen);
+   // }
+
+    public void removePen(Pen pen){
+        animalPens.remove(pen);
     }
 
     public void displayAllAnimalsInZoo(){

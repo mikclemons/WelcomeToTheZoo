@@ -6,8 +6,20 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 
-        ArrayList<Pen> animalPen = new ArrayList<>();
+        Zoo myZoo = new Zoo();
 
+        Pen animalPen = new Pen();
 
+        Animal monkey = new Animal("Mokney", "large", "male");
+        Animal lion = new Animal("Lion", "Medium", "female");
+        BabyAnimal bear = new BabyAnimal("Polar Bear", "small", "male", true);
+        BabyAnimal giraffe = new BabyAnimal("Giraffe", "medium", "female", false);
+
+        animalPen.addAnimalToPen(monkey);
+        animalPen.addAnimalToPen(lion);
+        animalPen.addBabyAnimalToPen(bear);
+        animalPen.addBabyAnimalToPen(giraffe);
+
+        animalPen.displayPenDetails();
     }
 }
