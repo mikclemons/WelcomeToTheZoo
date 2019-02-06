@@ -15,4 +15,21 @@ public class Pen {
         babyAnimals.add(babyAnimal);
 
     }
+
+    public void removeAnimal(Animal animal){
+        animals.remove(animal);
+    }
+
+    public void removeBabyAnimal(BabyAnimal babyAnimal){
+        babyAnimals.remove(babyAnimal);
+    }
+
+    public void displayPenDetails(){
+        for(Animal animal : animals){
+            System.out.println("Here are the animals currently in the Pen:\n" + animal.printDetails());
+        }
+        for(BabyAnimal babyAnimal : babyAnimals){
+            System.out.println("Here are the babyAnimals currently in the Pen:\n" + babyAnimal.printDetails());
+        }
+    }
 }
