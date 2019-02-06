@@ -6,12 +6,12 @@ public class Pen {
     private ArrayList<Animal> animals = new ArrayList<>();
     private ArrayList<BabyAnimal> babyAnimals = new ArrayList<>();
 
-    public void addAnimalToLibrary(Animal animal){
+    public void addAnimalToPen(Animal animal){
         animals.add(animal);
 
     }
 
-    public void addBabyAnimalToLibrary(BabyAnimal babyAnimal){
+    public void addBabyAnimalToPen(BabyAnimal babyAnimal){
         babyAnimals.add(babyAnimal);
 
     }
