@@ -13,4 +13,12 @@ public class BabyAnimal extends Animal {
         this.setGender(gender);
 
     }
+
+    @Override
+    public String printDetails() {
+        return ("species: " + getSpecies() + "\n" +
+                "size: " + getSize() + "\n" +
+                "gender: " + getGender() + "\n" +
+                "can they walk: " + canWalk);
+    }
 }

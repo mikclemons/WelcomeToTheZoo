@@ -35,4 +35,9 @@ public class Animal {
     public void setGender(String gender) {
         this.gender = gender;
     }
+    public String printDetails(){
+        return ("species: " + species + "\n" +
+                "size: " + size + "\n" +
+                "gender: " + gender + "\n");
+    }
 }
