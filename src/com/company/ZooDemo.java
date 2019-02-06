@@ -6,9 +6,9 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 
+        Pen animalPen = new Pen();
         Zoo myZoo = new Zoo();
 
-        Pen animalPen = new Pen();
 
         Animal monkey = new Animal("Mokney", "large", "male");
         Animal lion = new Animal("Lion", "Medium", "female");
@@ -26,5 +26,9 @@ public class ZooDemo {
         animalPen.removeBabyAnimal(bear);
 
         animalPen.displayPenDetails();
+
+        myZoo.displayAllAnimalsInZoo();
+
+        myZoo.removePen(animalPen);
     }
 }

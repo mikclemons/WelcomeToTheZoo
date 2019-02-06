@@ -5,17 +5,17 @@ public class Zoo {
 
     private ArrayList<Pen> animalPens = new ArrayList<>();
 
-   // public void addPen(Pen pen){
-        //animalPens.add(pen);
-   // }
 
-    public void removePen(Pen pen){
+    public void removePen(Pen pen) {
         animalPens.remove(pen);
+        System.out.println("This pen has been removed.");
     }
 
-    public void displayAllAnimalsInZoo(){
-        for(Pen pen : animalPens){
-            System.out.println("Here are all of the animals in the zoo: " + pen.displayPenDetails());
+    public void displayAllAnimalsInZoo() {
+        for (Pen animalPen : animalPens) {
+            System.out.println("Here are all of the animals in the zoo:" + animalPen.displayPenDetails());
         }
     }
 }
+
+
