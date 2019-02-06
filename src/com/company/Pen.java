@@ -24,12 +24,13 @@ public class Pen {
         babyAnimals.remove(babyAnimal);
     }
 
-    public void displayPenDetails(){
+    public String displayPenDetails(){
         for(Animal animal : animals){
             System.out.println("Here are the amimals currently in the Pen: " + animal.printDetails());
         }
         for(BabyAnimal babyAnimal : babyAnimals){
             System.out.println("Here are the babyAnimals currently in the Pen:\n" + babyAnimal.printDetails());
         }
+        return "";
     }
 }
